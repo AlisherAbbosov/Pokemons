@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fe43db86c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Pokemons</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__logo-box text-center">
+          <img
+            class="pokemon__logo"
+            src="./img/pokemon_logo.png"
+            alt="Pokemon Logo"
+          />
+          <i class="far fa-heart header__like-icon"></i>
+        </div>
+        <div>
+          <form>
+            <ul
+              class="header__list list-unstyled row p-0 m-0 d-flex justify-content-center"
+            >
+              <li class="header__item text-center w-25 p-0 m-0">
+                <button class="inputs">
+                  Gross <i class="fas fa-chevron-down fs-6 ms-2"></i>
+                </button>
+              </li>
+
+              <li class="search__box d-flex w-25">
+                <input
+                  class="form-control search__input inputs"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="search__button" type="submit">
+                  <i class="fas fa-search fs-5"></i>
+                </button>
+              </li>
+
+              <li class="header__item w-25">
+                <button class="inputs">
+                  Aa-Zz <i class="fas fa-chevron-down fs-6 ms-1"></i>
+                </button>
+              </li>
+
+              <li class="w-25">
+                <button class="inputs button__input">Button</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <main>
+      <div class="container pokemons__container">
+        <ul class="pokemons__list"></ul>
+      </div>
+    </main>
+
+    <script src="./js/pokemons.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
